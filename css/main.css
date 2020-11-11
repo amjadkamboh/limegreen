@@ -1,0 +1,2252 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom.
+ */
+
+html {
+	font-family: sans-serif; /* 1 */
+	-ms-text-size-adjust: 100%; /* 2 */
+	-webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+
+body {
+	margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+	display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+
+audio,
+canvas,
+progress,
+video {
+	display: inline-block; /* 1 */
+	vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+
+audio:not([controls]) {
+	display: none;
+	height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/10/11, Safari, and Firefox < 22.
+ */
+
+[hidden],
+template {
+	display: none;
+}
+
+/* Links
+   ========================================================================== */
+
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+
+a {
+	background-color: transparent;
+}
+
+/**
+ * Improve readability of focused elements when they are also in an
+ * active/hover state.
+ */
+
+a:active,
+a:hover {
+	outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+
+abbr[title] {
+	border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+
+b,
+strong {
+	font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+
+dfn {
+	font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+
+h1 {
+	font-size: 2em;
+	margin: .67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+
+mark {
+	background: #ff0;
+	color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+
+small {
+	font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+
+sup {
+	top: -.5em;
+}
+
+sub {
+	bottom: -.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+
+img {
+	border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+
+svg:not(:root) {
+	overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+
+figure {
+	margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+
+pre {
+	overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, monospace;
+	font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	color: inherit; /* 1 */
+	font: inherit; /* 2 */
+	margin: 0; /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+
+button {
+	overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+
+button,
+select {
+	text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button; /* 2 */
+	cursor: pointer; /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+
+button[disabled],
+html input[disabled] {
+	cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+	line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome.
+ */
+
+input[type="search"] {
+	-webkit-appearance: textfield; /* 1 */
+	box-sizing: content-box; /* 2 */
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: .35em .625em .75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+
+legend {
+	border: 0; /* 1 */
+	padding: 0; /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+
+textarea {
+	overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+	font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * Remove most spacing between table cells.
+ */
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+td,
+th {
+	padding: 0;
+}
+
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.eot?1s775i");
+	src: url("../fonts/icomoon.eot?1s775i#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?1s775i") format("truetype"), url("../fonts/icomoon.woff?1s775i") format("woff"), url("../fonts/icomoon.svg?1s775i#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1; /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-play126:before {
+	content: "\e907";
+}
+
+.icon-arrow483:before {
+	content: "\e902";
+}
+
+.icon-arrow4872:before {
+	content: "\e904";
+}
+
+.icon-shopping-cart12:before {
+	content: "\e905";
+}
+
+.icon-facebook31:before {
+	content: "\e901";
+}
+
+.icon-social-linkedin:before {
+	content: "\e903";
+}
+
+.icon-twitter:before {
+	content: "\e900";
+}
+
+.top-header .contact,
+.top-header .social .social-network,
+.top-header .shoping,
+#nav .container > ul,
+#nav .container > ul > li ul,
+.links .breadcrumbs ul,
+.blog .breadcrumbs ul,
+.aside-nav > ul,
+.aside-nav > ul > li ul,
+.net ul,
+.partner ul,
+.footer ul,
+.content .side-bar ul,
+.title ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.clearfix:after,
+#header:after,
+.container:after,
+.top-header:after,
+#nav:after,
+.links:after,
+.blog:after,
+#footer:after,
+.content:after,
+.title .start:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.ellipsis {
+	white-space: nowrap; /* 1 */
+	text-overflow: ellipsis; /* 2 */
+	overflow: hidden;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+* {
+	max-height: 1000000px;
+}
+
+body {
+	color: #333;
+	background: #fff;
+	font: 16px/1.2 "Raleway", "Arial", "Helvetica", sans-serif;
+	min-width: 320px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.gm-style img {
+	max-width: none;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.h {
+	font-family: inherit;
+	font-weight: bold;
+	margin: 0 0 .5em;
+	color: inherit;
+}
+
+h1,
+.h1 {
+	font-size: 50px;
+}
+
+h2,
+.h2 {
+	font-size: 44px;
+}
+
+h3,
+.h3 {
+	font-size: 20px;
+}
+
+h4,
+.h4 {
+	font-size: 19px;
+}
+
+h5,
+.h5 {
+	font-size: 17px;
+}
+
+h6,
+.h6 {
+	font-size: 15px;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+a {
+	color: #39f;
+}
+
+a:hover,
+a:focus {
+	text-decoration: none;
+}
+
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="search"],
+input[type="password"],
+textarea {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	border: 1px solid #999;
+	padding: .4em .7em;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+	border-color: #333;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	color: #999;
+}
+
+input[type="text"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+textarea::-moz-placeholder {
+	opacity: 1;
+	color: #999;
+}
+
+input[type="text"]:-moz-placeholder,
+input[type="tel"]:-moz-placeholder,
+input[type="email"]:-moz-placeholder,
+input[type="search"]:-moz-placeholder,
+input[type="password"]:-moz-placeholder,
+textarea:-moz-placeholder {
+	color: #999;
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	color: #999;
+}
+
+input[type="text"].placeholder,
+input[type="tel"].placeholder,
+input[type="email"].placeholder,
+input[type="search"].placeholder,
+input[type="password"].placeholder,
+textarea.placeholder {
+	color: #999;
+}
+
+select {
+	-webkit-border-radius: 0;
+}
+
+textarea {
+	resize: vertical;
+	vertical-align: top;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="file"],
+input[type="submit"] {
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	cursor: pointer;
+}
+
+#wrapper {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.container {
+	max-width: 1030px;
+	margin: 0 auto;
+}
+
+.btn {
+	display: inline-block;
+	text-decoration: none;
+	background: #47524d;
+	font: 11px/20px "Glegoo", serif;
+	color: #fff;
+	padding: 12px 28px 10px 10px;
+	border-radius: 5px;
+	z-index: 1;
+	position: relative;
+}
+
+.btn:hover {
+	color: #bde72b;
+}
+
+.btn strong {
+	font: 15px/20px "Raleway", sans-serif;
+}
+
+.btn:after {
+	position: absolute;
+	content: "";
+	top: 17px;
+	bottom: auto;
+	left: auto;
+	right: 19px;
+}
+
+.btn:after {
+	font: 800 9px/9px "icomoon";
+	content: "\e904";
+	color: #bde72b;
+	z-index: -1;
+}
+
+.top-header {
+	background: #55bc33;
+	padding: 0 10px;
+}
+
+.top-header .contact {
+	font-size: 12px;
+	line-height: 15px;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px 0;
+	letter-spacing: 1px;
+}
+
+.top-header .contact li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 28px;
+}
+
+.top-header .contact li:first-child a:after {
+	display: none;
+}
+
+.top-header .contact a {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+}
+
+.top-header .contact a:after {
+	position: absolute;
+	content: "";
+	top: 2px;
+	bottom: 0;
+	left: -17px;
+	right: 0;
+}
+
+.top-header .contact a:after {
+	border-left: 1px solid #fff;
+	height: 10px;
+}
+
+.top-header .contact a:hover {
+	color: #bde72b;
+}
+
+.top-header .social {
+	float: right;
+	width: 196px;
+	padding: 5px 0 0;
+}
+
+.top-header .social span {
+	color: #fff;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 700;
+	display: inline-block;
+	padding: 9px 0 0 9px;
+}
+
+.top-header .social .social-network {
+	float: right;
+}
+
+.top-header .social .social-network li {
+	display: inline-block;
+	vertical-align: top;
+	border: 2px solid #bde72b;
+	border-radius: 100%;
+	margin: 0 0 0 5px;
+}
+
+.top-header .social .social-network a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.top-header .social .social-network a:hover {
+	color: #bde72b;
+}
+
+.top-header .social .icon-twitter,
+.top-header .social .icon-social-linkedin,
+.top-header .social .icon-facebook31 {
+	font-size: 19px;
+	line-height: 20px;
+	padding: 4px;
+	display: block;
+}
+
+.top-header .shoping {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: bold;
+}
+
+.top-header .shoping li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 -4px;
+}
+
+.top-header .shoping a {
+	color: #51b629;
+	background: #bde72b;
+	display: block;
+	text-decoration: none;
+	padding: 10px 19px 14px 20px;
+}
+
+.top-header .shoping a:hover {
+	background: #85d833;
+}
+
+.top-header .shoping .icon-shopping-cart12 {
+	color: #fff;
+	font-size: 19px;
+	line-height: 18px;
+	background: #85d833;
+}
+
+.logo-holder {
+	overflow: hidden;
+	padding: 10px;
+	text-align: center;
+}
+
+.logo-holder .logo {
+	margin: 0 20px 0 10px;
+}
+
+.logo-holder .logo img {
+	display: block;
+	width: 280px;
+}
+
+.logo-holder .btn {
+	margin: 10px 0 0;
+}
+
+#nav {
+	background: #47524d;
+	position: absolute;
+	-webkit-transition: all .3s linear;
+	transition: all .3s linear;
+	opacity: 0;
+	visibility: hidden;
+	width: 100%;
+	border-bottom: 3px solid #b9c0bd;
+}
+
+#nav .container > ul {
+	text-align: center;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 700;
+}
+
+#nav .container > ul .drop {
+	position: relative;
+}
+
+#nav .container > ul .drop:after {
+	position: absolute;
+	content: "";
+	top: 15px;
+	bottom: auto;
+	left: auto;
+	right: 15px;
+}
+
+#nav .container > ul .drop:after {
+	font: 800 9px/11px "icomoon";
+	content: "\e902";
+	color: #bde72b;
+}
+
+#nav .container > ul > li {
+	display: block;
+}
+
+#nav .container > ul > li > a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	word-spacing: 4px;
+	letter-spacing: 1px;
+}
+
+#nav .container > ul > li > a:hover {
+	background: #5abc33;
+}
+
+#nav .container > ul > li:hover ul {
+	display: block;
+}
+
+#nav .container > ul > li ul {
+	display: none;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 500;
+}
+
+#nav .container > ul > li li {
+	display: block;
+}
+
+#nav .container > ul > li li a {
+	color: #47524d;
+	background: #b9c0bd;
+	text-decoration: none;
+	padding: 10px;
+	display: block;
+	display: block;
+}
+
+#nav .container > ul > li li a:hover {
+	background: #5abc33;
+}
+
+.banner {
+	background-color: #64714e;
+	background-position: 50% 50%;
+	background-size: cover;
+	margin: 0 0 33px;
+	min-height: 369px;
+}
+
+.banner .caption {
+	white-space: nowrap;
+	text-align: center;
+	max-width: 1030px;
+	margin: 0 auto;
+}
+
+.banner .caption:after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	min-height: 369px;
+}
+
+.banner .caption > * {
+	white-space: normal;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 99%;
+}
+
+.banner .caption .text-holder {
+	margin: 0 auto;
+	padding: 0 0 0 5px;
+	font-size: 15px;
+	line-height: 25px;
+	color: #fff;
+	font-weight: 500;
+}
+
+.banner .caption .text-holder h1 {
+	font-size: 40px;
+	line-height: 50px;
+	margin: 0 0 17px;
+	text-indent: -2px;
+}
+
+#main {
+	overflow: hidden;
+}
+
+.links,
+.blog {
+	border-bottom: 1px solid #cad8d2;
+	margin: 0 -37px 25px 0;
+	padding: 0 10px 18px;
+}
+
+.links .breadcrumbs,
+.blog .breadcrumbs {
+	padding: 0 0 0 3px;
+}
+
+.links .breadcrumbs ul,
+.blog .breadcrumbs ul {
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.links .breadcrumbs ul li,
+.blog .breadcrumbs ul li {
+	float: left;
+	color: #adaead;
+	margin: 0 24px 0 0;
+}
+
+.links .breadcrumbs ul a,
+.blog .breadcrumbs ul a {
+	color: #47524d;
+	text-decoration: none;
+	position: relative;
+}
+
+.links .breadcrumbs ul a:hover,
+.blog .breadcrumbs ul a:hover {
+	color: #adaead;
+}
+
+.links .breadcrumbs ul a:after,
+.blog .breadcrumbs ul a:after {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: auto;
+	left: auto;
+	right: -17px;
+}
+
+.links .breadcrumbs ul a:after,
+.blog .breadcrumbs ul a:after {
+	content: ">";
+	color: #69c149;
+}
+
+.links .page,
+.blog .page {
+	color: #47524d;
+	display: block;
+	float: right;
+	text-decoration: none;
+	font-size: 11px;
+	line-height: 18px;
+	font-weight: bold;
+	padding: 2px 29px 0 0;
+	letter-spacing: 1px;
+	position: relative;
+}
+
+.links .page:hover,
+.blog .page:hover {
+	color: #adaead;
+}
+
+.links .page:after,
+.blog .page:after {
+	position: absolute;
+	content: "";
+	top: 3px;
+	bottom: auto;
+	left: auto;
+	right: 2px;
+}
+
+.links .page:after,
+.blog .page:after {
+	font: 800 11px/11px "icomoon";
+	content: "\e902";
+	color: #bde72b;
+}
+
+.links .post,
+.blog .post {
+	float: left;
+	margin: 0 37px 0 0;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: center;
+}
+
+.links h2,
+.blog h2 {
+	font-size: 18px;
+	line-height: 25px;
+	margin: 0 0 11px;
+}
+
+.links p,
+.blog p {
+	margin: 0 0 10px;
+}
+
+.links .img-holder,
+.blog .img-holder {
+	width: 285px;
+	margin: 0 0 20px 2px;
+	position: relative;
+	display: inline-block;
+}
+
+.links .img-holder a,
+.blog .img-holder a {
+	position: relative;
+	display: block;
+}
+
+.links .img-holder a:after,
+.blog .img-holder a:after {
+	position: absolute;
+	content: "";
+	top: 12px;
+	bottom: 12px;
+	left: 13px;
+	right: 10px;
+}
+
+.links .img-holder a:hover,
+.blog .img-holder a:hover {
+	position: relative;
+}
+
+.links .img-holder a:hover:before,
+.blog .img-holder a:hover:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.links .img-holder a:hover:before,
+.blog .img-holder a:hover:before {
+	border: 13px solid #bde72b;
+	opacity: .8;
+}
+
+.links .img-holder a:after,
+.blog .img-holder a:after {
+	border: 3px solid #fff;
+}
+
+.links .img-holder a img,
+.blog .img-holder a img {
+	display: block;
+}
+
+.links .icon-play126,
+.blog .icon-play126 {
+	color: #fff;
+	font-size: 50px;
+	line-height: 50px;
+	left: 40%;
+	position: absolute;
+	cursor: pointer;
+	top: 33%;
+}
+
+.links {
+	margin: 0 0 37px 0;
+}
+
+.more {
+	overflow: hidden;
+	text-align: center;
+	font-size: 18px;
+	line-height: 20px;
+	font-weight: bold;
+	text-align: center;
+	text-indent: 10px;
+	letter-spacing: 1px;
+	margin: -2px 0 49px;
+}
+
+.more a {
+	color: #adaead;
+	text-decoration: none;
+}
+
+.more a:hover {
+	opacity: .6;
+}
+
+#footer {
+	width: 100%;
+}
+
+#footer .aside {
+	background: #47524d;
+	padding: 10px;
+}
+
+.aside-nav {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.aside-nav > ul {
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.aside-nav > ul > li > a {
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	display: block;
+	margin: 0 0 8px;
+}
+
+.aside-nav > ul > li > a:hover {
+	color: #919995;
+}
+
+.aside-nav > ul > li ul {
+	font-size: 11px;
+	line-height: 16px;
+}
+
+.aside-nav > ul > li ul li {
+	text-transform: uppercase;
+	letter-spacing: .09px;
+	margin: 4px;
+}
+
+.aside-nav > ul > li ul li.active a {
+	color: #fff;
+	position: relative;
+}
+
+.aside-nav > ul > li ul li.active a:after {
+	position: absolute;
+	content: "";
+	top: 4px;
+	bottom: auto;
+	left: auto;
+	right: -20px;
+}
+
+.aside-nav > ul > li ul li.active a:after {
+	font: 800 9px/9px "icomoon";
+	content: "\e904";
+	color: #bde72b;
+}
+
+.aside-nav > ul > li ul a {
+	color: #919995;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.aside-nav > ul > li ul a:hover {
+	color: #fff;
+	position: relative;
+}
+
+.aside-nav > ul > li ul a:hover:after {
+	position: absolute;
+	content: "";
+	top: 4px;
+	bottom: auto;
+	left: auto;
+	right: -20px;
+}
+
+.aside-nav > ul > li ul a:hover:after {
+	font: 800 9px/9px "icomoon";
+	content: "\e904";
+	color: #bde72b;
+}
+
+.side-form {
+	width: 100%;
+	padding: 10px 0 0;
+	float: left;
+	text-align: center;
+}
+
+.side-form h2 {
+	font-size: 17px;
+	line-height: 18px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin: 0 0 26px;
+}
+
+.side-form .search {
+	margin: 0 0 23px;
+	display: inline-block;
+}
+
+.side-form .row {
+	position: relative;
+	width: 300px;
+	float: right;
+}
+
+.side-form .row .btn {
+	height: 38px;
+	padding: 3px 12px 0 16px;
+	letter-spacing: 1px;
+	position: absolute;
+	right: 2px;
+	top: 2px;
+	border: none;
+	border-radius: 5px;
+	font: bold 14px/15px "Raleway", sans-serif;
+	color: #4dad27;
+	background: #bde72b;
+}
+
+.side-form .row .btn:hover {
+	color: #fff;
+}
+
+.side-form .row .btn:after {
+	display: none;
+}
+
+.side-form .row input[type="email"] {
+	border-radius: 6px;
+	width: 300px;
+	height: 43px;
+	padding: 5px 100px 5px 16px;
+}
+
+.net {
+	margin: 0 0 24px;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.net .btn {
+	float: left;
+	background: #5abc33;
+}
+
+.net ul {
+	float: right;
+	padding: 8px 0 0;
+}
+
+.net ul li {
+	display: inline-block;
+	vertical-align: top;
+	border: 2px solid #58625d;
+	border-radius: 100%;
+	margin: 0 0 0 5px;
+}
+
+.net ul a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.net ul a:hover {
+	color: #bde72b;
+}
+
+.net .icon-twitter,
+.net .icon-social-linkedin,
+.net .icon-facebook31 {
+	font-size: 19px;
+	line-height: 20px;
+	padding: 4px;
+	display: block;
+}
+
+.partner {
+	overflow: hidden;
+}
+
+.partner ul {
+	margin: 0 -4px 0 0;
+	text-align: center;
+}
+
+.partner ul li {
+	vertical-align: middle;
+	display: inline-block;
+	margin: 15px 0;
+}
+
+.footer {
+	background: #5abc33;
+	overflow: hidden;
+	padding: 10px;
+	text-align: center;
+}
+
+.footer span {
+	font-size: 12px;
+	line-height: 15px;
+	color: #fff;
+	float: left;
+	font-weight: 600;
+	word-spacing: 4px;
+}
+
+.footer span a {
+	color: #fff;
+	text-decoration: none;
+	word-spacing: 2px;
+	font-weight: 500;
+}
+
+.footer span a:hover {
+	opacity: .8;
+}
+
+.footer ul {
+	float: left;
+	padding: 5px 0 5px;
+	font-size: 10px;
+	line-height: 15px;
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+
+.footer ul li {
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 14px;
+}
+
+.footer ul a {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+}
+
+.footer ul a:after {
+	position: absolute;
+	content: "";
+	top: 2px;
+	bottom: 0;
+	left: -12px;
+	right: 0;
+}
+
+.footer ul a:after {
+	border-left: 1px solid #fff;
+	height: 12px;
+}
+
+.footer ul a:hover {
+	color: #bde72b;
+}
+
+.content {
+	margin: -8px 0 0;
+}
+
+.content .side-bar {
+	width: 100%;
+	float: left;
+	padding: 0 20px;
+}
+
+.content .side-bar ul {
+	font: 12px/15px "Glegoo", serif;
+}
+
+.content .side-bar ul li.active a {
+	color: #51b629;
+	background: #bde72b;
+	border-color: #bde72b;
+	border-radius: 5px;
+	font: bold 12px/15px "Raleway", "Helvetica", sans-serif;
+	text-transform: uppercase;
+	padding: 12px 4px 12px 20px;
+	word-spacing: 2px;
+}
+
+.content .side-bar ul li:first-child a {
+	border-top: 0;
+}
+
+.content .side-bar ul a {
+	color: #47524d;
+	text-decoration: none;
+	border-top: 1px solid #ccc;
+	display: block;
+	padding: 12px 10px;
+}
+
+.content .side-bar ul a.none {
+	border: none;
+}
+
+.content .side-bar ul a:hover {
+	color: #51b629;
+	background: #bde72b;
+	border-color: #bde72b;
+	border-radius: 5px;
+}
+
+.news {
+	padding: 11px 0 0;
+	margin: 0 -96px 0 0;
+	overflow: hidden;
+}
+
+.news .news-holder {
+	float: left;
+	text-align: center;
+	padding: 0 0 0 48px;
+}
+
+.news a {
+	position: relative;
+	margin: 0 14px 14px 0;
+	display: block;
+}
+
+.news a:after {
+	position: absolute;
+	content: "";
+	top: 12px;
+	bottom: 12px;
+	left: 13px;
+	right: 12px;
+}
+
+.news a:hover {
+	position: relative;
+}
+
+.news a:hover:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.news a:hover:before {
+	border: 13px solid #bde72b;
+	border-radius: 100%;
+	opacity: .8;
+}
+
+.news a:after {
+	border: 3px solid #fff;
+	border-radius: 100%;
+}
+
+.news img {
+	border-radius: 100%;
+	display: block;
+}
+
+.title {
+	width: 100%;
+	float: right;
+	padding: 15px;
+	color: #47524d;
+	font-size: 13px;
+	line-height: 25px;
+	margin: 0 0 10px;
+}
+
+.title h2 {
+	font: 40px/44px "Glegoo", serif;
+	margin: 0 0 23px;
+	text-indent: -5px;
+}
+
+.title h2 strong {
+	font: bold 40px/50px "Raleway", "Helvetica", sans-serif;
+}
+
+.title p {
+	margin: 0 0 23px;
+}
+
+.title ul {
+	margin: 0 0 3px;
+	float: left;
+	font-weight: 500;
+	width: 100%;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+.title ul li {
+	display: block;
+	margin: 0 82px 20px 37px;
+	position: relative;
+}
+
+.title ul li:after {
+	position: absolute;
+	content: "";
+	top: -8px;
+	bottom: auto;
+	left: -17px;
+	right: auto;
+}
+
+.title ul li:after {
+	content: "-";
+	font-size: 27px;
+	line-height: 30px;
+	color: #5abc33;
+}
+
+.title ul a {
+	color: #47524d;
+	text-decoration: none;
+}
+
+.title ul a:hover {
+	opacity: .8;
+}
+
+.title h3 {
+	font-size: 20px;
+	line-height: 20px;
+	color: #bde72b;
+	margin: 0 0 13px;
+}
+
+.title h4 {
+	font-size: 19px;
+	line-height: 20px;
+	color: #47524d;
+	margin: 0 0 41px;
+}
+
+.title .start {
+	background: #bde72b;
+	text-align: center;
+	margin: 50px 0;
+	border-radius: 5px;
+	padding: 20px;
+	position: relative;
+}
+
+.title .start:before {
+	position: absolute;
+	content: "";
+	top: -45px;
+	bottom: auto;
+	left: 0;
+	right: 0;
+}
+
+.title .start:before {
+	border-top: 1px solid #ccc;
+}
+
+.title .start .text {
+	display: block;
+	float: left;
+	font-size: 17px;
+	font-weight: 600;
+	margin: 0 17px 0 0;
+	color: #5abc33;
+	text-transform: uppercase;
+}
+
+.title .start .btn {
+	margin: 8px 2px 0 0;
+	background: #5abc33;
+	padding: 11px 35px 10px 22px;
+}
+
+.title .start .btn strong {
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+.nav-opener {
+	border-top: 5px solid #5abc33;
+	width: 35px;
+	height: 35px;
+	top: 20px;
+	right: 10px;
+	display: block;
+	z-index: 99999;
+	float: right;
+	position: relative;
+	z-index: 1;
+	position: relative;
+	z-index: 1;
+}
+
+.nav-opener:after {
+	position: absolute;
+	content: "";
+	top: 5px;
+	z-index: -1;
+	bottom: auto;
+	left: 0;
+	right: 0;
+	background: #5abc33;
+}
+
+.nav-opener:before {
+	position: absolute;
+	content: "";
+	top: 15px;
+	z-index: -1;
+	bottom: auto;
+	left: 0;
+	right: 0;
+	background: #5abc33;
+}
+
+.nav-opener:after,
+.nav-opener:before {
+	height: 5px;
+}
+
+.nav-active #nav {
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+}
+
+.nav-active .nav-opener {
+	border: none;
+}
+
+.nav-active .nav-opener:before {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 5px;
+}
+
+.nav-active .nav-opener:after {
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+@media (min-width: 768px) {
+	.btn {
+		font: 15px/20px "Glegoo", serif;
+		padding: 11px 39px 10px 22px;
+	}
+
+	.btn strong {
+		font: 18px/20px "Raleway", sans-serif;
+	}
+
+	.top-header {
+		padding: 4px 20px 0;
+	}
+
+	.top-header .contact {
+		text-align: left;
+		padding: 9px 0 0;
+		float: right;
+	}
+
+	.top-header .social {
+		padding: 0;
+	}
+
+	.top-header .social span {
+		padding: 9px 0 0;
+	}
+
+	.top-header .shoping {
+		margin: -4px 16px 0 20px;
+		float: right;
+	}
+
+	.logo-holder {
+		padding: 18px 20px 21px;
+	}
+
+	.logo-holder .logo {
+		float: left;
+		margin: 0 20px 0 0;
+	}
+
+	.logo-holder .logo img {
+		width: 100%;
+	}
+
+	.logo-holder .btn {
+		float: right;
+		margin: 5px 3px 0 0;
+	}
+
+	#nav {
+		padding: 0 0 0 7px;
+		opacity: 1;
+		visibility: visible;
+		display: block;
+		position: inherit;
+	}
+
+	#nav .container > ul {
+		width: auto;
+		text-align: left;
+	}
+
+	#nav .container > ul .drop {
+		position: relative;
+	}
+
+	#nav .container > ul .drop:after {
+		position: absolute;
+		content: "";
+		top: 27px;
+		bottom: auto;
+		left: auto;
+		right: 11px;
+	}
+
+	#nav .container > ul > li > a {
+		padding: 25px 22px 20px 10px;
+	}
+
+	#nav .container > ul > li {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+	}
+
+	#nav .container > ul > li ul {
+		font-size: 12px;
+		line-height: 15px;
+		width: 205px;
+		position: absolute;
+	}
+
+	#nav .container > ul > li li a {
+		padding: 15px 10px 15px 10px;
+	}
+
+	.banner .caption {
+		text-align: left;
+		padding: 0 0 0 20px;
+	}
+
+	.banner .caption .text-holder {
+		font-size: 20px;
+		line-height: 25px;
+	}
+
+	.banner .caption .text-holder h1 {
+		font-size: 50px;
+		line-height: 50px;
+	}
+
+	#main {
+		padding: 0 15px 0 10px;
+	}
+
+	.links,
+	.blog {
+		padding: 0 0 20px;
+		margin: 0 -37px 28px 0;
+	}
+
+	.links .page,
+	.blog .page {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.links .post,
+	.blog .post {
+		text-align: left;
+		font-size: 15px;
+		line-height: 26px;
+		width: 44.5%;
+	}
+
+	.links h2,
+	.blog h2 {
+		font-size: 21px;
+		line-height: 25px;
+	}
+
+	.links p,
+	.blog p {
+		margin: 0;
+	}
+
+	.links .img-holder,
+	.blog .img-holder {
+		width: 345px;
+	}
+
+	.links .icon-play126,
+	.blog .icon-play126 {
+		font-size: 70px;
+		line-height: 70px;
+	}
+
+	#footer .aside {
+		padding: 50px;
+	}
+
+	.aside-nav {
+		width: 50%;
+		text-align: left;
+	}
+
+	.aside-nav > ul {
+		font-size: 17px;
+		line-height: 20px;
+	}
+
+	.aside-nav > ul > li {
+		float: left;
+		margin: 0 49px 0 0;
+	}
+
+	.aside-nav > ul > li > a {
+		margin: 0 0 24px;
+	}
+
+	.aside-nav > ul > li ul {
+		font-size: 14px;
+		line-height: 16px;
+	}
+
+	.aside-nav > ul > li ul li {
+		margin: 0 0 13px;
+	}
+
+	.side-form {
+		width: 50%;
+		padding: 0 6px;
+		text-align: right;
+		float: right;
+	}
+
+	.side-form .row {
+		width: 312px;
+	}
+
+	.side-form .row input[type="email"] {
+		width: 312px;
+	}
+
+	.net .btn {
+		float: right;
+	}
+
+	.net ul {
+		padding: 4px 18px 0 0;
+	}
+
+	.partner ul li {
+		display: block;
+	}
+
+	.footer {
+		padding: 18px 18px 3px;
+		text-align: left;
+	}
+
+	.footer span {
+		padding: 0 23px 0 3px;
+	}
+
+	.footer ul {
+		font-size: 12px;
+		line-height: 15px;
+		padding: 0;
+	}
+
+	.footer ul li {
+		margin: 0 16px 0 0;
+	}
+
+	.footer .logo-foot {
+		float: right;
+		margin: -11px 2px 0;
+	}
+
+	.content .side-bar {
+		padding: 68px 0 0 0;
+		margin: 0 0 0 -2px;
+		width: 30%;
+	}
+
+	.content .side-bar ul {
+		font: 14px/15px "Glegoo", serif;
+	}
+
+	.content .side-bar ul li.active a {
+		font: bold 14px/15px "Raleway", "Helvetica", sans-serif;
+	}
+
+	.content .side-bar ul a {
+		padding: 12px 4px;
+	}
+
+	.news .news-holder {
+		padding: 0;
+	}
+
+	.news img {
+		width: 150px;
+	}
+
+	.title {
+		padding: 0 0 22px 39px;
+		width: 70%;
+		font-size: 13px;
+		line-height: 20px;
+	}
+
+	.title h2 {
+		font: 44px/44px "Glegoo", serif;
+	}
+
+	.title h2 strong {
+		font: bold 50px/50px "Raleway", "Helvetica", sans-serif;
+	}
+
+	.title ul {
+		width: auto;
+		font-size: 12px;
+		line-height: 18px;
+	}
+
+	.title ul li {
+		margin: 0 30px 20px;
+	}
+
+	.title h4 {
+		font-size: 13px;
+		line-height: 20px;
+		text-indent: 0;
+	}
+
+	.title .start {
+		margin: 50px 0;
+		text-align: left;
+		padding: 20px;
+	}
+
+	.title .start .text {
+		width: 62%;
+		font-size: 14px;
+		margin: 0;
+	}
+
+	.title .start .btn {
+		float: right;
+		padding: 11px 35px 10px 12px;
+	}
+
+	.nav-opener {
+		display: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	.top-header {
+		padding: 4px 6px 0 0;
+	}
+
+	.logo-holder {
+		padding: 18px 0 21px;
+	}
+
+	#nav .container > ul {
+		font-size: 15px;
+		line-height: 15px;
+	}
+
+	#nav .container > ul > li > a {
+		padding: 25px 35px 23px 20px;
+	}
+
+	#nav .container > ul > li ul {
+		font-size: 15px;
+		line-height: 15px;
+		width: 265px;
+	}
+
+	#nav .container > ul > li li a {
+		padding: 23px 16px 23px 28px;
+	}
+
+	.banner .caption {
+		padding: 0;
+	}
+
+	#main {
+		padding: 0;
+	}
+
+	.links,
+	.blog {
+		padding: 0 0 28px;
+		margin: 0 -37px 37px 0;
+	}
+
+	.links .page,
+	.blog .page {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.links .post,
+	.blog .post {
+		width: 46.5%;
+	}
+
+	.links .img-holder,
+	.blog .img-holder {
+		width: auto;
+	}
+
+	.links .icon-play126,
+	.blog .icon-play126 {
+		font-size: 100px;
+		line-height: 100px;
+	}
+
+	#footer .aside {
+		padding: 53px 0 52px 7px;
+	}
+
+	.aside-nav {
+		width: 63.9%;
+	}
+
+	.side-form {
+		width: 36%;
+	}
+
+	.partner ul {
+		text-align: right;
+	}
+
+	.partner ul li {
+		margin: 0 0 0 11px;
+		display: inline-block;
+	}
+
+	.footer {
+		padding: 18px 0 2px;
+	}
+
+	.content .side-bar {
+		width: 21.9%;
+	}
+
+	.news a {
+		margin: 0 81px 24px 18px;
+	}
+
+	.news img {
+		width: 100%;
+	}
+
+	.title {
+		width: 78%;
+		font-size: 15px;
+		line-height: 25px;
+	}
+
+	.title ul {
+		font-size: 15px;
+		line-height: 18px;
+	}
+
+	.title ul li {
+		margin: 0 82px 20px 37px;
+	}
+
+	.title h4 {
+		font-size: 19px;
+		line-height: 20px;
+		text-indent: -63px;
+	}
+
+	.title .start {
+		margin: 90px 2px 51px 0;
+		padding: 33px 30px 34px 33px;
+	}
+
+	.title .start .text {
+		width: 72%;
+		margin: 0 17px 0 0;
+		font-size: 17px;
+	}
+
+	.title .start .btn {
+		padding: 11px 35px 10px 22px;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	a[href^=tel],
+	a[href^=skype],
+	a[href^=sms] {
+		cursor: default;
+		pointer-events: none;
+	}
+}
+
